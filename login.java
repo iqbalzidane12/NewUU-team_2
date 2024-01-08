@@ -73,17 +73,11 @@ public class Frame1 extends JFrame{
     public void submitActionPerformed(java.awt.event.ActionEvent evt){
         if(id.getText().equals("admin") && pass.getText().equals("admin")){
             this.hide();
-            Frame2new fn=new Frame2new();
-            fn.showButtonDemo();
+            Frame1 =new Frame1();
+            break ();
         }
         else{
             JOptionPane.showMessageDialog(null, "Invalid password!");
         }
-    }
-}
-class MyGui{
-    public static void main(String[] a){
-        Frame1 f = new Frame1();
-        f.setVisible(true);
     }
 }
